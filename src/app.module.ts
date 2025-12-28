@@ -13,10 +13,11 @@ import { ConfigModule } from '@nestjs/config';
     }),
     TypeOrmModule.forRoot({
       type: 'postgres',
+      url: 'postgresql://postgres:jQxXmvOAXcplyfkRqBaDMaBdLuRIOfsd@postgres.railway.internal:5432/railway',
       host: 'postgres.railway.internal',
       port: 5432,
       username: 'postgres',
-      password: 'vGDLnGWuwaGPVyCVNGALefVVXYzNTrkY',
+      password: 'jQxXmvOAXcplyfkRqBaDMaBdLuRIOfsd',
       database: 'railway',
       autoLoadEntities: true,
       synchronize: true,
