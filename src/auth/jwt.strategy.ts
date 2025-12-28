@@ -10,7 +10,7 @@ function cookieExtractor(req: any) {
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor() {
     super({
-      secretOrKey: 'SECRET_KEY',
+      secretOrKey: 'jQxXmvOAXcplyfkRqBaDMaBdLuRIOfsd',
       jwtFromRequest: ExtractJwt.fromExtractors([
         cookieExtractor,
         ExtractJwt.fromAuthHeaderAsBearerToken(),
